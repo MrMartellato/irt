@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Incompatible browser</title>
+        <style>
+            body {
+                font-family: Verdana,Tahoma,Arial,sans-serif;
+            }
+            #upgradeMessage {
+                height: 250px;
+
+                position: absolute;
+                top:0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+
+                margin: auto;
+            }
+            .downloads {
+                margin: 0 auto;
+            }
+            .download {
+                display: inline-block;
+                position: relative;
+                margin: 0 5px;
+            }
+            #chrome {
+                background: url('required/browserSprites.png') -160px 0;
+                height: 100px;
+                width: 100px;
+            }
+            #firefox {
+                background: url('required/browserSprites.png') -260px 0;
+                height: 100px;
+                width: 97px;
+            }
+            #edge {
+                background: url('required/browserSprites.png') -357px 0;
+                height: 100px;
+                width: 103px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="upgradeMessage" class="message" style="text-align:center;">
+            <div>
+                This edition requires an HTML 5 compatible browser. It seems that
+                your browser does not provide these features.<br /><br />
+                Links to both options are available below for your convenience.<br /><br /><br />
+            </div>
+            <br />
+            <div class="downloads">
+                <a id="chrome" class="download" href="http://www.google.com/chrome/"></a>
+                <a id="firefox" class="download" href="http://www.mozilla.org/firefox/"></a>
+                <a id="edge" class="download" href="http://microsoft.com/edge"></a>
+            </div>
+        </div>
+    </body>
+</html>
